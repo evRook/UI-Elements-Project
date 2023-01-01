@@ -1,4 +1,3 @@
-console.log('Hello World')
 
 let genOne = document.querySelector('.js-gen1--container') //gets page container
 let modal = document.querySelector('.js-modal')
@@ -27,7 +26,6 @@ async function getPkmn() {
     for(let i=0; i<genOneImg.length; i++){
         let response = await fetch(`https://pokeapi.co/api/v2/pokemon/${i+1}`);
         let data = await response.json();
-        console.log(data)
         genOneImg[i].style.backgroundImage = `url('${data.sprites.front_default}')`;
     }
 }
