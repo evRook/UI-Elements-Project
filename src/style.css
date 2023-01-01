@@ -60,33 +60,41 @@ body {
     max-width: 720px;
     background-color: white;
     border: 2px #474747 outset;
-    border-radius: 50px 20px;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
     box-shadow: 2px 5px 5px 2px #000000;
 }
 
 .modal--img__container {
     height: 400px;
-    width: 40%;
+    width: 50%;
 }
 
 .modal--img1 {
     border: 2px grey solid;
     height: 50%;
-    width: 70%;
-    float: left;
+    width: 60%;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
 }
 
 .modal--img2 {
     border: 2px grey solid;
     height: 50%;
-    width: 70%;
+    width: 60%;
     float: right;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
 }
 
 .modal--txt {
-    border: 2px grey solid;
-    width: 60%;
-    padding-left: 15px;
+    /* border: 2px grey solid; */
+    width: 50%;
+    padding-left: 30px;
     min-height: 400px;
 }
 
