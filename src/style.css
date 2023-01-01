@@ -172,3 +172,76 @@ body {
 .js-visible--modal__container {
     display: block;
 }
+
+
+@media screen and (max-width: 576px) {
+
+    .modal--img1 {
+        width: 100%;
+    }
+
+    .modal--img2 {
+        width: 100%;
+    }
+
+    .modal--img1 p {
+        display: none;
+    }
+
+    .modal--img2 p {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 490px) {
+
+    body {
+        margin-top: 50px;
+    }
+
+    .modal--container {
+        padding-top: 100px;
+        margin: 0 auto;
+    }
+
+    .modal {
+        flex-direction: column-reverse;
+        height: 450px;
+    }
+
+    .modal--txt {
+        width: 95%;
+        margin: auto;
+        min-height: 63%;
+        padding: 0;
+    }
+
+    .modal--img__container {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .modal--img1 {
+        height: 150px;
+        width: 150px;
+        margin: 0 auto;
+    }
+
+    .modal--img2 {
+        height: 150px;
+        width: 150px;
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    .gen1--title__container {
+        font-size: 13px;
+    }
+
+}
