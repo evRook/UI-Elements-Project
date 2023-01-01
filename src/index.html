@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Simple PokeDex</title>
     <link rel="stylesheet" href="/src/style.css">
 </head>
 <body>
@@ -17,20 +17,23 @@
         <div class="gen1--title__container">
             <h1 class="gen1--title">First Generation Starters</h1>
         </div>
-        <div class="gen1--container js-gen1--container">
-            <div class="gen1--img js-gen1--img"></div>
-            <div class="gen1--img js-gen1--img"></div>
-            <div class="gen1--img js-gen1--img"></div>
-            <div class="gen1--img js-gen1--img"></div>
-            <div class="gen1--img js-gen1--img"></div>
-            <div class="gen1--img js-gen1--img"></div>
-            <div class="gen1--img js-gen1--img"></div>
-            <div class="gen1--img js-gen1--img"></div>
-            <div class="gen1--img js-gen1--img"></div>
-        </div>
+        <div class="gen1--container js-gen1--container"></div>
         <div class="modal--container js-modal--container">
             <div class="modal js-modal">
-
+                <div class="modal--img__container js-modal--img__container">
+                    <div class="modal--img1 js-modal--img"></div>
+                    <div class="modal--img2 js-modal--img"></div>
+                </div>
+                <div class="modal--txt js-modal--txt">
+                    <div class="modal--title__container">
+                        <h1 class="name"></h1>
+                        <div class="closeBtn js-closeBtn"></div>
+                    </div>
+                    <p class="dexNumber"></p>
+                    <p class="height"></p>
+                    <p class="weight"></p>
+                    <p class="abilities"></p>
+                </div>
             </div>
         </div>
     </main>
