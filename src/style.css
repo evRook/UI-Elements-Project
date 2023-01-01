@@ -43,7 +43,7 @@ body {
 }
 
 .modal--container {
-    display: block;
+    display: none;
     position: fixed;
     left: 0;
     top: 0;
@@ -56,7 +56,7 @@ body {
 
 .modal {
     opacity: 1;
-    display: flex;
+    display: none;
     max-width: 720px;
     background-color: white;
     border: 2px #474747 outset;
@@ -112,4 +112,12 @@ body {
     margin-top: 10px;
     cursor: pointer;
     text-align: center;
+}
+
+.js-visible--modal {
+    display: flex;
+}
+
+.js-visible--modal__container {
+    display: block;
 }
