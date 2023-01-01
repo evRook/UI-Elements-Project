@@ -1,6 +1,7 @@
 * {
     margin-right: auto;
     margin-left: auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -65,17 +66,50 @@ body {
 
 .modal--img__container {
     height: 400px;
-    width: 30%;
+    width: 40%;
 }
 
 .modal--img1 {
     border: 2px grey solid;
     height: 50%;
-    width: 100%;
+    width: 70%;
+    float: left;
 }
 
 .modal--img2 {
     border: 2px grey solid;
     height: 50%;
-    width: 100%;
+    width: 70%;
+    float: right;
+}
+
+.modal--txt {
+    border: 2px grey solid;
+    width: 60%;
+    padding-left: 15px;
+    min-height: 400px;
+}
+
+.modal--txt p {
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.modal--title__container {
+    display: flex;
+}
+
+.name {
+    margin: auto 0;
+    margin-top: 10px;
+}
+
+.closeBtn {
+    border: 2px grey solid;
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-align: center;
 }
