@@ -1,7 +1,8 @@
 console.log('Hello World')
 
 let genOne = document.querySelector('.js-gen1--container') //gets page container
-
+let modal = document.querySelector('.js--modal')
+let modalContainer = document.querySelector('.js-modal--container')
 
 for(k=0; k < 151; k++){
     let newDiv = document.createElement('div');
@@ -19,4 +20,3 @@ async function getPkmn(){
     }
 }
 getPkmn();
-
