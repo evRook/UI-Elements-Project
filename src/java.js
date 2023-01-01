@@ -11,6 +11,7 @@ let height = document.querySelector('.js-height')
 let weight = document.querySelector('.js-weight')
 let abilities = document.querySelector('.js-normalAbilities')
 let hiddenAbilities = document.querySelector('.js-hiddenAbilities')
+let closeBtn = document.querySelector('.js-closeBtn')
 let num = ''
 
 for(k=0; k < 151; k++){
@@ -94,3 +95,9 @@ async function modalContent() {
     }
 
 }
+
+
+closeBtn.addEventListener('click', closeModal => {
+    modalContainer.classList.remove('js-visible--modal__container')
+    modal.classList.remove('js-visible--modal')
+})
