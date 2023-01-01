@@ -14,11 +14,13 @@ let hiddenAbilities = document.querySelector('.js-hiddenAbilities')
 let closeBtn = document.querySelector('.js-closeBtn')
 let num = ''
 
+
 for(k=0; k < 151; k++){
     let newDiv = document.createElement('div');
     newDiv.className = 'gen1--img js-gen1--img';
     genOne.appendChild(newDiv);
 }
+
 
 async function getPkmn() {
     let genOneImg = document.querySelectorAll('.js-gen1--img') //gets img containers
@@ -31,7 +33,9 @@ async function getPkmn() {
 }
 getPkmn();
 
+
 let imgBtn = document.querySelectorAll('.js-gen1--img')
+
 
 for(let n=0; n<imgBtn.length; n++){
     imgBtn[n].addEventListener('click', openModal => {
@@ -41,6 +45,7 @@ for(let n=0; n<imgBtn.length; n++){
         modalContent();
     })
 }
+
 
 async function modalContent() {
     let response = await fetch(`https://pokeapi.co/api/v2/pokemon/${num}`);

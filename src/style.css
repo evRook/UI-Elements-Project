@@ -6,6 +6,7 @@
 
 body {
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .gen1--title__container{
@@ -59,12 +60,12 @@ body {
     display: none;
     max-width: 720px;
     background-color: white;
-    border: 2px #474747 outset;
-    border-top-left-radius: 200px;
-    border-bottom-left-radius: 200px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border: 4px #b8b8b8 ridge;
+    border-radius: 30px;
     box-shadow: 2px 5px 5px 2px #000000;
+    background-image: url(/src/img/5818392.webp);
+    background-position: left;
+    background-size: 180%;
 }
 
 .modal--img__container {
@@ -73,33 +74,54 @@ body {
 }
 
 .modal--img1 {
-    border: 2px grey solid;
     height: 50%;
-    width: 60%;
+    width: 80%;
+    float: right;
+    margin-left: 10px;
     background-position: center;
     background-size: cover;
     justify-content: center;
+    position: relative;
+}
+
+.modal--img1 p {
+    font-weight: 900;
+    margin-bottom: 5px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .modal--img2 {
-    border: 2px grey solid;
     height: 50%;
-    width: 60%;
-    float: right;
+    width: 80%;
+    float: left;
     background-position: center;
     background-size: cover;
     justify-content: center;
+    position: relative;
+}
+
+.modal--img2 p {
+    font-weight: 900;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .modal--txt {
-    /* border: 2px grey solid; */
-    width: 50%;
-    padding-left: 30px;
+    width: 60%;
+    margin-left: 12%;
+    padding-left: 10px;
     min-height: 400px;
+    background-position:bottom;
+    background-size: cover; 
+    
 }
 
 .modal--txt p {
-    margin-bottom: 0;
+    margin-bottom: 10px;
     margin-top: 10px;
 }
 
@@ -108,12 +130,16 @@ body {
 }
 
 .name {
+    font-size: 30px;
     margin: auto 0;
     margin-top: 10px;
+    padding: 10px;
+    border: 4px #474747 double;
+    border-radius: 10px;
+    background-color: #f3f3f3;
 }
 
 .closeBtn {
-    border: 2px grey solid;
     height: 18px;
     width: 18px;
     margin-right: 10px;
@@ -121,6 +147,17 @@ body {
     cursor: pointer;
     text-align: center;
 }
+
+.text--content__container {
+    margin-top: 20px;
+    padding: 10px;
+    margin-right: 20px;
+    background-color: #f3f3f3;
+    border: 4px #474747 double;
+    border-radius: 10px;
+    
+}
+
 
 .js-visible--modal {
     display: flex;
