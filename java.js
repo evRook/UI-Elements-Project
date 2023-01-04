@@ -24,7 +24,7 @@ for(k=0; k < 151; k++){
 async function getPkmn() {
     let genOneImg = document.querySelectorAll('.js-gen1--img') //gets img containers
     for(let i=0; i<genOneImg.length; i++){
-        let response = await fetch(`https://pokeapi.co/api/v2/pokemon/${i+1}`);
+        let response = await fetch(`https://pokeapi.co/api/v2/pokemon/${i+1}`);//waits for each element to load before moving on
         let data = await response.json();
         genOneImg[i].style.backgroundImage = `url('${data.sprites.front_default}')`;
     }
