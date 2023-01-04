@@ -35,4 +35,4 @@
 <br>
 ---
 ---
-###### This is not affiliated with Nintendo or The Pokemon Company. 
+##### This is not affiliated with Nintendo or The Pokemon Company. 
